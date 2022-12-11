@@ -6,6 +6,8 @@
     --bg-color: #FFFFFF;
     --cloud-color:#F4F4FD;
     --cornflower-color:#E7E9FC;
+    --social-link-green: #31D0AA;
+    --light-slate-color:#8E8F99;
     --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     --header-box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -13,6 +15,7 @@
     --baton-order-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
 }
+
 body {
     background-color:var(--bg-color);
     color: var(--text-color);
@@ -100,9 +103,15 @@ margin-right:0;
 }
  /* < !--main--> */
 .hero {
-    background: var(--dark-color);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/people-office.jpg);
     padding-top: 192px;
     padding-bottom: 192px;
+     background-size:cover;
+    background-repeat:no-repeat;
+  
 }
  .hero >.container {
 text-align: center;
@@ -118,6 +127,7 @@ text-align: center;
     padding-left: 32px;
 }
 .hero-name {
+  
     width: 492px;
     margin-right: auto;
     margin-left: auto;
@@ -192,6 +202,42 @@ text-align: center;
    padding-top: 120px;
    padding-bottom: 120px;
 }
+.icons-items {
+   background-color: var(--cloud-color);
+   width: 264px;
+   height: 112px;
+    
+}
+.icons {
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    background-color: var(--cloud-color);
+    width: 264px;
+}
+.social-links-icons {
+   display: flex;
+   list-style: none;
+   justify-content: center;
+   gap: 24px;
+   margin-top: 8px;
+
+}
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: var(--primarybrand-color);
+
+}
+
+.list-link-items {}
 .title {
     text-align: center;
     font-family: inherit;
@@ -304,6 +350,100 @@ text-align: center;
     background-color: var(--primarybrand-color);
     color: var(--cloud-color);
 }
+.footer-container {
+    display: flex;
+    width: 1158px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    
+}
+.footer-content {
+    display: flex;
+    width: 264px;
+    flex-direction: column;
+
+}
+.footer-social-link {
+    display: block;
+  align-items: center;
+  justify-content: center;
+  margin-left: 120px;
+}
+.footer-social-title {
+   padding: 0px;
+   margin: 0px;
+    margin-bottom: 17px;
+    font-family: 'Roboto';
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.5;
+}
+/* SECTION 4 CUSTOMERS */
+
+.customers-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.customers-list-item {
+    width: 168px;
+    height: 88px;
+    border: 1px solid var(--light-slate-color);
+    border-radius: 4px;
+}
+
+.customers-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    border: 1px solid var(--customers-list-color);
+    color: var(--light-slate-color);
+}
+
+.customers-list-icon {
+    fill: var(--light-slate-color);
+}
+
+.customers-list-icon:hover,
+.customers-list-icon:focus {
+    fill: var(--primarybrand-color);
+}
+
+
+.footer-links-icons {
+    display: flex;
+        list-style: none;
+        justify-content: center;
+        gap: 24px;
+}
+
+
+
+.footer-list-link {
+    display: flex;
+        list-style: none;
+        justify-content: center;
+}
+.footer-list-link:hover,
+.footer-list-link:focus {
+    background-color: var(--social-link-green);
+}
+
+
+.footer-list-link {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: var(--text-color);
+}
 .filter-btn {
     font-family:inherit;
     font-weight: 500;
@@ -360,6 +500,7 @@ text-align: center;
 }
 .portfolio-cards_item {
     flex-basis: calc((100% - 2 * 24px) / 3);
+    background: #FFFFFF;
 }
 .portfolio-cards_box {
     padding-top: 32px;
@@ -376,4 +517,9 @@ text-align: center;
     letter-spacing: .02em;
     margin-bottom: 8px;
 }
-/* .portfolio {} */
+.portfolio-cards_item:hover,
+.portfolio-cards_item:focus {
+border: 0.5px solid var(--cloud-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    color: var(--text-color);
+}
