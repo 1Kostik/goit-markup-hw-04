@@ -396,31 +396,34 @@ text-align: center;
 
 .customers-list-link {
     display: flex;
+    height: 100%;
     justify-content: center;
     align-items: center;
-    padding: 16px 32px;
     border: 1px solid var(--customers-list-color);
     color: var(--light-slate-color);
+    border-radius: 4px;
 }
 
 .customers-list-icon {
     fill: var(--light-slate-color);
 }
 
-.customers-list-icon:hover,
-.customers-list-icon:focus {
-    fill: var(--primarybrand-color);
+.customers-list-item:hover,
+.customers-list-item:focus {
+    border: 1px solid var(--primarybrand-color);
+        border-radius: 4px;
 }
-
-
+.customers-list-link:hover .customers-list-icon,
+.customers-list-link:focus .customers-list-icon {
+    color: var(--primarybrand-color);
+    fill: var(--primarybrand-color);
+ }
 .footer-links-icons {
     display: flex;
         list-style: none;
         justify-content: center;
         gap: 24px;
 }
-
-
 
 .footer-list-link {
     display: flex;
@@ -431,7 +434,6 @@ text-align: center;
 .footer-list-link:focus {
     background-color: var(--social-link-green);
 }
-
 
 .footer-list-link {
     display: flex;
@@ -461,6 +463,10 @@ text-align: center;
 .filter-btn:focus {
     background-color: var(--primarybrand-color);
     color: var(--bg-color);
+    box-shadow: var(--card-shadow);
+border-radius: 4px;
+border: 1px solid var(--primarybrand-color);
+
 }
 .visually-hidden {
     position: absolute;
@@ -520,5 +526,17 @@ text-align: center;
 .portfolio-cards_item:focus {
 border: 0.5px solid var(--cloud-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.link-cards:hover,
+.link-cards:focus {
     color: var(--text-color);
+}
+.link-cards {
+    color: var(--text-color);
+         text-decoration: none;
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
 }
